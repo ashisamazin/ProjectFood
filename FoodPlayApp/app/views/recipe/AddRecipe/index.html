@@ -1,0 +1,15 @@
+#{extends 'main.html' /} #{set title:'Home' /}
+
+<div id="mainTitle">Add a New Recipe</div>
+
+#{if flash.error}
+    <p style="color:#c00">
+        ${flash.error}
+    </p>
+#{/if}
+
+<form action="@{recipe.AddRecipe.addRecipe()}" method="GET">
+    <label for="name">Recipe Name: </label>
+    <input type="text" name="name" /> 
+    <input type="submit" value="Add Recipe!" />
+</form> 

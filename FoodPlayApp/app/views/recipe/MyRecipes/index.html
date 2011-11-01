@@ -1,0 +1,11 @@
+#{extends 'main.html' /} #{set title:'Home' /}
+
+<div id="mainTitle">My Recipes</div>
+
+<ul>
+#{list items:recipes, as:'recipe'}
+    <li>${recipe.name}</li>
+#{/list}
+</ul>
+
+<a href="/addRecipe">Add a new recipe</a>

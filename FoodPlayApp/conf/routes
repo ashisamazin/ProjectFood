@@ -5,6 +5,10 @@
 # Home page
 GET     /                                       Home.index
 
+# New Pags
+GET		/myRecipes								recipe.MyRecipes.index
+GET		/addRecipe								recipe.AddRecipe.index
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
